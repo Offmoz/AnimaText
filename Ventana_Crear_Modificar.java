@@ -5,7 +5,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class Ventana_Crear_Modificar extends JFrame implements Runnable, ActionListener {
+public class Ventana_Crear_Modificar extends JFrame implements Runnable {
     Thread t;
     public static JFrame ventanaP = new JFrame();
 
