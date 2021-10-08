@@ -185,21 +185,27 @@ class eventos implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent evento) {
         if(evento.getSource()==Creacion_Buttons_Text.botonIniciar){
+            //establezco las lineas a leer
             Archivos.listaPaginas();
+            //creo el panel una vez
             if(crearMenuIni == true){
                 Central.animaTextRun();
                 crearMenuIni = false;
             }
             else{Paneles_Creacion.borrarMenuIni();}
+            //de aqui en adelante solo lo muestro o desmuestro
+            Creacion_Texto.vaciarParrafos(0);
+            Central.reproducirPaina = 1;
+
         }
 
         if(evento.getSource() == Creacion_Buttons_Text.botonPlay){
-            Creacion_Texto.vaciarParrafos(0);
-            try {
+            AnimaText.pause = 1;
+            /*try {
                 Creacion_Texto.rellenarParrafos(); Central.reproducirPaina = 1;
             } catch (IOException e) {
                 e.printStackTrace();
-            }
+            }*/
         }
 
         if(evento.getSource() == Creacion_Buttons_Text.botonAvance){

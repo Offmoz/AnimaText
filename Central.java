@@ -49,7 +49,7 @@ public class Central {
             }
             else{
                 try {
-                    reproducirPaina = 0; AnimaText.animaText();
+                    AnimaText.animaText();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
