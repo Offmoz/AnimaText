@@ -208,7 +208,8 @@ class eventos implements ActionListener{
             if(Archivos.pagina > Archivos.listaPaginas.length - 1){
                 Archivos.pagina = Archivos.listaPaginas.length - 1 ;
             }
-            System.out.println(Archivos.pagina);
+            Paneles_Creacion.repintarNumeroPagina();
+            //System.out.println(Archivos.pagina);
         }
 
         if(evento.getSource() == Creacion_Buttons_Text.botonRetro){
@@ -217,7 +218,8 @@ class eventos implements ActionListener{
             if(Archivos.pagina < 0){
                 Archivos.pagina = 0;
             }
-            System.out.println(Archivos.pagina);
+            Paneles_Creacion.repintarNumeroPagina();
+            //System.out.println(Archivos.pagina);
         }
 
         if(evento.getSource() == Creacion_Buttons_Text.botonVolverMenu){

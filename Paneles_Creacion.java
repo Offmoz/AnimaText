@@ -91,12 +91,16 @@ public class Paneles_Creacion implements ActionListener{
         panelRedaccion.updateUI();
     }
 
+    public static void repintarNumeroPagina(){
+        labelPagina.setText("Pagina: "+Archivos.pagina);
+    }
+
     private JLabel labelsRedaccion(){
-        labelPagina.setBounds(100,580,100,20);
+        labelPagina.setBounds(730,580,100,20);
         labelPagina.setForeground(Color.white);
         labelPagina.setBorder(null);
         labelPagina.setOpaque(false);
-        labelPagina.setText("1");
+        labelPagina.setText("Pagina: "+Archivos.pagina);
         return labelPagina;
 
     }

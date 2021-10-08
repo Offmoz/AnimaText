@@ -44,7 +44,7 @@ public class Central {
         while(bucleDetecciones){
 
             if(reproducirPaina == 0){
-                Utilidades.realentizar(149);
+                Utilidades.realentizar(150);
                 System.out.println("En Bucle");
             }
             else{
